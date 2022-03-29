@@ -1,3 +1,5 @@
+package puzzle8;
+
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -7,8 +9,8 @@ import java.util.LinkedList;
  * @author Ihr Name
  */
 public class A_Star {
-	// cost ordnet jedem Board die aktuellen Pfadkosten (g-Wert) zu.
-	// pred ordnet jedem Board den Elternknoten zu. (siehe Skript S. 2-25). 
+	// cost ordnet jedem puzzle8.Board die aktuellen Pfadkosten (g-Wert) zu.
+	// pred ordnet jedem puzzle8.Board den Elternknoten zu. (siehe Skript S. 2-25).
 	// In cost und pred sind genau alle Knoten der closedList und openList enthalten!
 	// Nachdem der Zielknoten erreicht wurde, lässt sich aus cost und pred der Ergebnispfad ermitteln.
 	private static HashMap<Board,Integer> cost = new HashMap<>();

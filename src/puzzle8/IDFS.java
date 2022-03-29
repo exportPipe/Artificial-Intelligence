@@ -1,9 +1,10 @@
+package puzzle8;
+
 import java.util.Deque;
-import java.util.HashSet;
 import java.util.LinkedList;
 
 /**
- * Klasse IDFS für iterative deepening depth-first search
+ * Klasse puzzle8.IDFS für iterative deepening depth-first search
  * @author Ihr Name
  */
 public class IDFS {

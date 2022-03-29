@@ -1,9 +1,11 @@
+package puzzle8;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 
 /**
- * Klasse Board für 8-Puzzle-Problem
+ * Klasse puzzle8.Board für 8-Puzzle-Problem
  * @author Ihr Name
  */
 public class Board {
@@ -14,20 +16,20 @@ public class Board {
 	public static final int N = 8;
 
 	/**
-	 * Board als Feld. 
+	 * puzzle8.Board als Feld.
 	 * Gefüllt mit einer Permutation von 0,1,2, ..., 8.
 	 * 0 bedeutet leeres Feld.
 	 */
 	protected int[] board = new int[N+1];
 
 	/**
-	 * Generiert ein zufälliges Board.
+	 * Generiert ein zufälliges puzzle8.Board.
 	 */
 	public Board() {
 	}
 	
 	/**
-	 * Generiert ein Board und initialisiert es mit board.
+	 * Generiert ein puzzle8.Board und initialisiert es mit board.
 	 * @param board Feld gefüllt mit einer Permutation von 0,1,2, ..., 8.
 	 */
 	public Board(int[] board) {
@@ -98,8 +100,8 @@ public class Board {
 	
 	
 	/**
-	 * Prüft, ob das Board ein Zielzustand ist.
-	 * @return true, falls Board Ziestzustand (d.h. 0,1,2,3,4,5,6,7,8)
+	 * Prüft, ob das puzzle8.Board ein Zielzustand ist.
+	 * @return true, falls puzzle8.Board Ziestzustand (d.h. 0,1,2,3,4,5,6,7,8)
 	 */
 	public boolean isSolved() {
 		return true;
