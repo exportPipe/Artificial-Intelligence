@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 /**
  * Klasse puzzle8.IDFS für iterative deepening depth-first search
- * @author Ihr Name
+ * @author Paul Rueß
  */
 public class IDFS {
 
