@@ -14,7 +14,7 @@ import java.util.HashMap;
  * Operation add, change, remove, removeMin in O(log n).
  * Operation get, getMinKey, getMinValue in O(1) (Hashtabelle bzw. indizierter Zugriff).
  * 
- * Siehe auch puzzle8.IndexMinPQ in Sedgewick, Algorthms, 4.ed., 2012, Seite 320.
+ * Siehe auch IndexMinPQ in Sedgewick, Algorthms, 4.ed., 2012, Seite 320. 
  * 
  * @author Oliver Bittel
  * @param <Key>	Schlüsseltyp. Vorsicht: hashCode muss geeignet überschrieben sein.
@@ -173,6 +173,7 @@ public class IndexMinPQ<Key, PrioValue> {
 			prioPos.get(heap[0]).pos = 0; 
 			downheap(0);
 		}
+		prioPos.remove(k);
 		return k;
 	}
 	
