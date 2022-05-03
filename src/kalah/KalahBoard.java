@@ -362,6 +362,19 @@ public class KalahBoard {
 	public int readAction() {
 		System.out.print(ANSI_BLUE + curPlayer + " spielt Mulde: ");
 
+		if (curPlayer == APlayer) {
+
+			// ca 25 Mio betrachtete Züge
+//			return  Minimax.minimax(this, 10);
+
+			// zwischen 500 und 3000 betrachteten Züge
+//			return AlphaBetaPruning.miniMax(this, 40, false);
+
+			// nicht mehr als 2500
+			return AlphaBetaPruning.minimax(this, 40, true);
+		}
+
+
 		while (in.hasNextLine()) {
 			String line = in.nextLine();
 			if (line.equals("quit")) {
